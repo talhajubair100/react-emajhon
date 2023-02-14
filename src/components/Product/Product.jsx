@@ -6,7 +6,7 @@ import { Rating } from 'react-simple-star-rating'
 
 const Product = ({product, handleAddToCart}) => {
     // const { product, handleAddToCart } = props;
-    const {name, seller, price, stock, ratings, img,} = product;
+    const {name, seller, price, stock, ratings, img, shipping} = product;
     
     
   return (
@@ -17,6 +17,7 @@ const Product = ({product, handleAddToCart}) => {
       <h6>{name}</h6>
       <p>Seller: {seller}</p>
       <p>Price: ${price}</p>
+      <p>Shipping: ${shipping}</p>
       <p>IN Stock: {stock} Pcs</p>
       <Rating initialValue={ratings} readonly></Rating>
       
