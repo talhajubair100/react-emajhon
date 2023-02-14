@@ -3,6 +3,12 @@
     grid-template-columns: 4fr 1fr;
 }
 
+.cart-container{
+    background-color: #c5c2c2;
+    border-radius: 8px;
+    padding: 20px;
+}
+
 .products-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
